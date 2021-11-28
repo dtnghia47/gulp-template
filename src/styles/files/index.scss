@@ -1,0 +1,8 @@
+@import "../components/card.scss";
+
+.demo {
+  color: red;
+  .child {
+    background: transparent;
+  }
+}

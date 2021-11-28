@@ -1,0 +1,25 @@
+block vars
+  -title = 'Site'
+  -desc = 'Desc'
+  -bodyClass = ''
+  -dataURL = '../data/en.json'
+block varNav
+  -isFooter = true
+  -isHeader = true
+doctype html
+html(class="no-js", lang=lang)
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    title=title
+    meta(name="description", content=desc)
+    meta(name="keywords", content="")
+    meta(name="robots", content="index, follow")
+    meta(name="author", content="")
+    meta(name="viewport", content="width=device-width, initial-scale=1, minimal-ui, user-scalable=no")
+    meta(property="og:type", content="website")
+    meta(property="og:title", content=title)
+    meta(property="og:description", content=desc)
+    link(rel="stylesheet", href="/css/style.css")
+  body
+    block container
